@@ -92,6 +92,7 @@ video {
 
 .nav #brand a:hover {
   text-decoration: none;
+  cursor: url(../icons/cursor3.png), auto !important;
 }
 
 .nav #menu {
@@ -121,6 +122,7 @@ video {
   text-decoration: none;
   color: #fff;
   transition: all 500ms ease-out;
+  cursor: url(../icons/cursor3.png), auto !important;
 }
 
 #toggle {
