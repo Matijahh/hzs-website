@@ -271,141 +271,21 @@ section {
   color: grey;
 }
 
-.more {
-  margin: 40px 0;
-}
-
-button {
-  background: none;
-  border: 0.3pt solid rgba(184, 140, 93, 0.7);
-  text-transform: uppercase !important;
-  font-size: 12px !important;
-  letter-spacing: 2px;
-  padding: 18px 36px;
-}
-
 /* ------------ Timeline sekcija ------------ */
 
-.services {
+.timeline {
   background: #161616;
 }
 
-.timeline1 {
-  margin: 30px 0;
+/* ------------ Core Tim sekcija ------------ */
+
+/* ------------ Q&A sekcija ------------ */
+
+.faq {
+  background: #161616;
 }
 
-.icon ion-icon {
-  font-size: 36px;
-  color: lightgreen;
-}
-
-.icon-title {
-  font-size: 28px;
-  margin-bottom: 4px;
-  color: rgb(182, 182, 182);
-  font-weight: lighter;
-}
-
-/* ------------ Tim sekcija ------------ */
-
-.team-member,
-.team-img {
-  position: relative;
-}
-
-.team-img {
-  background: grey;
-  height: 340px;
-}
-
-.members {
-  margin: 50px 0;
-}
-
-.team-title {
-  margin: 20px 0;
-}
-
-.team-title h5 {
-  font-size: 28px;
-}
-
-.team-title span {
-  font-size: 20px;
-}
-
-.team-member {
-  overflow: hidden;
-}
-
-.team-one {
-  background: url(../docs/team-one.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-
-.team-two {
-  background: url(../docs/team-two.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-
-/* ------------ Kontakt sekcija ------------ */
-
-#contact-form {
-  margin: 5% 0;
-}
-
-.contact .icon-title {
-  margin-top: 10px;
-  color: #000;
-}
-
-#contact-form ul {
-  list-style: none;
-  margin-bottom: 40px;
-  border-radius: 0;
-}
-
-#contact-form li:last-of-type {
-  border-bottom: none;
-}
-
-#contact-form label {
-  display: block;
-  font-size: 22px;
-  color: rgb(97, 97, 97);
-}
-
-#contact-form input,
-#contact-form textarea {
-  width: 100%;
-  padding: 5px;
-  border: none;
-  resize: vertical;
-  background: transparent;
-  color: #101010;
-  font-weight: bolder;
-}
-
-input:focus {
-  outline: none !important;
-  border: none !important;
-}
-
-textarea:focus {
-  outline: none !important;
-  border: none !important;
-}
-
-.textarea {
-  border-bottom: 1px solid #c9c9c9;
-}
-
-@media (max-width: 900px) {
-  #contact-form {
-    margin: 5% 0;
-    width: 98%;
-  }
-}
+/* ------------ Partneri sekcija ------------ */
 
 /* ------------ Footer ------------ */
 
