@@ -14,6 +14,29 @@ body {
 
 /* ------------ Hero sekcija ------------ */
 
+.header h1{
+  font-family: 'Nunito', sans-serif !important;
+  font-weight: 700;
+  border-right: 0.1rem solid white;
+  overflow: hidden; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .1em; 
+  animation: 
+    typing 4s steps(30, end),
+    blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
 .video-container {
   position: absolute;
   width: 100%;
@@ -48,16 +71,76 @@ video {
   transform: translate(-50%, -50%);
 }
 
-.header h1 {
+.header h1{
   color: lightgreen;
   font-size: 70px !important;
+  margin-top: 100px !important;
+}
+
+.tajmer {
+  font-family: 'Nunito', sans-serif !important;
+  margin-top: 80px;
+  color: lightgreen;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hr-style{
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 60px;
+  height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px lightgreen inset;
+}
+
+#tajmer-poruka{
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif !important;
+  margin-top: 40px;
+  color: lightgreen;
+  font-size: 30px !important;
+  text-align: center;
+}
+
+.tajmer div{
+  font-family: 'Nunito', sans-serif !important;
+  padding: 10px;
+  border: 2px solid lightgreen;
+  border-radius: 10px;
+  margin: 5px;
+  opacity: 0.7;
+  background: #000;
+}
+
+.tajmer span{
+  display: block;
+  font-size: 25px;
 }
 
 @media (max-width: 900px) {
   .header h1 {
-    font-size: 34px !important;
+    font-size: 30px !important;
     text-align: center;
   }
+
+  .tajmer {
+    margin-top: 80px;
+    font-size: 30px;
+  }
+
+  .tajmer span{
+    display: block;
+    font-size: 15px;
+  }
+
+  #tajmer-poruka{
+    font-size: 20px !important;
+  }
+  
 }
 
 /* ------------ Navbar ------------ */

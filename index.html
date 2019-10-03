@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link
@@ -23,7 +24,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Ikone -->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 
     <!-- Scroll animacija -->
     <link
@@ -39,13 +41,54 @@
 
       <div class="video-container">
         <video playsinline autoplay muted loop id="bgvid">
-          <source src="docs/videobg.mp4" type="video/mp4" />
+          <source src="docs/trying.vid" type="video/mp4" />
         </video>
       </div>
 
       <div class="header">
-        <h1>HZS - Bring IT on!</h1>
+          <h1>HZS - Bring IT on!</h1>   
+          <div class="tajmer"></div>
+          <hr class="hr-style"/>
+          <p id="tajmer-poruka">Do početka Hakatona!</p>    
       </div>
+
+      <script>
+        const tajmer = document.querySelector('.tajmer');
+
+        // Datum pocetka
+        const datumPocetka = new Date('Oct 30, 2019 19:47:00').getTime();
+        
+        // Azuriranje svake sekunde
+        const intvl = setInterval(() =>{
+          // Trenutni datum i vreme
+          const sada = new Date().getTime();
+
+          // Razlika do pocetka 
+          const razlika = datumPocetka - sada;
+
+          // Kalkulacije
+          const dani = Math.floor(razlika / (1000 * 60 * 60 * 24));
+          const sati = Math.floor((razlika % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minuti = Math.floor((razlika % (1000 * 60 * 60)) / (1000 * 60));
+          const sekunde = Math.floor((razlika % (1000 * 60)) / 1000);
+
+          tajmer.innerHTML = `
+            <div>${('0' + dani).slice(-2)}<span>dana</span></div>
+            <div>${('0' + sati).slice(-2)}<span>sati</span></div>
+            <div>${('0' + minuti).slice(-2)}<span>minuta</span></div>
+            <div>${('0' + sekunde).slice(-2)}<span>sekundi</span></div>
+          `;
+
+          if(razlika < 0){
+            clearInterval(intvl);
+            tajmer.style.color = 'lightgreen';
+            tajmer.innerHTML = 'Hakaton je počeo!';
+            document.querySelector('#tajmer-poruka').innerHTML = '';
+          }
+
+        }, 1000);
+      </script>
+
 
       <!-- Hero sekcija - Kraj -->
 
