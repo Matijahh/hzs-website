@@ -97,19 +97,14 @@ video {
   align-items: center;
 }
 
-.hr-style {
-  margin: 0 auto;
-  width: 70%;
-  margin-top: 60px;
-  height: 10px;
-  border: 0;
-  box-shadow: 0 10px 10px -10px #00ffa3 inset;
+.header img {
+  margin: 0;
 }
 
 #tajmer-poruka {
   font-weight: bold;
   font-family: 'Source Code Pro', monospace !important;
-  margin-top: 40px;
+  margin-top: 0;
   color: #00ffa3;
   font-size: 30px !important;
   text-align: center;
@@ -134,6 +129,10 @@ video {
   .header h1 {
     font-size: 23px !important;
     text-align: center;
+  }
+
+  .header img {
+    width: 300px;
   }
 
   .tajmer {
