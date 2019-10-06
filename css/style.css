@@ -180,7 +180,7 @@ video {
 
 .nav #brand a:hover {
   text-decoration: none;
-  cursor: pointer;
+  cursor: url(../icons/cursor-pointer.png), auto !important;
 }
 
 .nav #menu {
@@ -210,7 +210,7 @@ video {
   text-decoration: none;
   color: #019961;
   transition: all 500ms ease-out;
-  cursor: pointer;
+  cursor: url(../icons/cursor-pointer.png), auto !important;
 }
 
 #toggle {
