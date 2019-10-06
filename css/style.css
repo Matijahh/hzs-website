@@ -333,6 +333,7 @@ video {
 
 section {
   padding: 140px 0;
+  height: 100vh;
 }
 
 .section-index {
@@ -362,7 +363,8 @@ section {
 /* ------------ Timeline sekcija ------------ */
 
 .timeline {
-  background: #161616;
+  background: url(../docs/background-image-3.jpg) no-repeat;
+  background-size: cover;
 }
 
 /* ------------ Core Tim sekcija ------------ */
@@ -370,7 +372,8 @@ section {
 /* ------------ Q&A sekcija ------------ */
 
 .faq {
-  background: #161616;
+  background: url(../docs/background-image-2.jpg) no-repeat;
+  background-size: cover;
 }
 
 /* ------------ Partneri sekcija ------------ */
@@ -378,7 +381,8 @@ section {
 /* ------------ Footer ------------ */
 
 .footer {
-  background: #161616;
+  background: url(../docs/background-image-3.jpg) no-repeat;
+  background-size: cover;
 }
 
 #media,
