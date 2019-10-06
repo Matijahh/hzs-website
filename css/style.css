@@ -427,7 +427,19 @@ h4 {
 }
 
 @media (max-width: 900px) {
+  .timeline {
+    background: url(../docs/background-image-3-manja.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .faq {
+    background: url(../docs/background-image-2-manja.jpg) no-repeat;
+    background-size: cover;
+  }
+
   .footer .container {
     width: 92% !important;
+    background: url(../docs/background-image-3-manja.jpg) no-repeat;
+    background-size: cover;
   }
 }
