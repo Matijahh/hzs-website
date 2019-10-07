@@ -327,6 +327,34 @@
             </div>
           </div>
         </div>
+        <div class="row margin-partners-first">
+          <div class="container">
+            <div class="customer-logos slider">
+              <div class="slide"><img src="https://cnet3.cbsistatic.com/img/Yt768C55hXNi2eGSB9qOv-e7SQg=/2011/03/16/c7675aa8-fdba-11e2-8c7c-d4ae52e62bcc/Chrome-logo-2011-03-16.jpg"></div>
+              <div class="slide"><img src="https://brandmark.io/logo-rank/random/beats.png"></div>
+              <div class="slide"><img src="images/image3.png"></div>
+              <div class="slide"><img src="images/image4.png"></div>
+              <div class="slide"><img src="images/image5.png"></div>
+              <div class="slide"><img src="images/image6.png"></div>
+              <div class="slide"><img src="images/image7.png"></div>
+              <div class="slide"><img src="images/image8.png"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row margin-partners">
+            <div class="container">
+              <div class="customer-logos slider">
+                <div class="slide"><img src="https://cnet3.cbsistatic.com/img/Yt768C55hXNi2eGSB9qOv-e7SQg=/2011/03/16/c7675aa8-fdba-11e2-8c7c-d4ae52e62bcc/Chrome-logo-2011-03-16.jpg"></div>
+                <div class="slide"><img src="https://brandmark.io/logo-rank/random/beats.png"></div>
+                <div class="slide"><img src="images/image3.png"></div>
+                <div class="slide"><img src="images/image4.png"></div>
+                <div class="slide"><img src="images/image5.png"></div>
+                <div class="slide"><img src="images/image6.png"></div>
+                <div class="slide"><img src="images/image7.png"></div>
+                <div class="slide"><img src="images/image8.png"></div>
+              </div>
+            </div>
+          </div>
       </section>
 
       <!-- Partneri sekcija - Kraj -->
@@ -384,6 +412,10 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- Slider za partnere -->
+    <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    
     <script>
       // navigation starts here
       $('#toggle').click(function() {
@@ -486,6 +518,29 @@
         window.addEventListener("scroll", callbackFunc);
       
       })();
+      </script>
+      <script type="text/javascript">
+          $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+              pauseOnHover: false,
+              pauseOnFocus: false,
+              responsive: [{
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4
+              }
+            }, {
+              breakpoint: 520,
+              settings: {
+                slidesToShow: 3
+              }
+            }]
+          });
       </script>
   </body>
 </html>
