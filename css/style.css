@@ -487,6 +487,10 @@ section {
 }
 
 /* ------------ Core Tim sekcija ------------ */
+.team{
+  height: auto;
+}
+
 .popup {
   position: relative;
   display: inline-block;
