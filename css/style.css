@@ -104,7 +104,7 @@ video {
 #tajmer-poruka {
   font-weight: bold;
   font-family: 'Source Code Pro', monospace !important;
-  margin-top: 0;
+  margin-top: 20px;
   color: #00ffa3;
   font-size: 30px !important;
   text-align: center;
@@ -362,7 +362,13 @@ section {
 
 /* ------------ Timeline sekcija ------------ */
 .timeline {
-  background: url(../docs/background-image-3.jpg) no-repeat;
+  background: rgb(51, 51, 51);
+  background: linear-gradient(
+    90deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(20, 112, 79, 1) 50%,
+    rgba(0, 255, 163, 1) 100%
+  );
   background-size: cover;
   height: auto;
 }
@@ -487,7 +493,7 @@ section {
 }
 
 /* ------------ Core Tim sekcija ------------ */
-.team{
+.team {
   height: auto;
 }
 
@@ -495,7 +501,7 @@ section {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  margin:20px;
+  margin: 20px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -510,20 +516,18 @@ section {
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  left:50%;
-  margin-left:-125px;   /* negative half of width above */
+  left: 50%;
+  margin-left: -125px; /* negative half of width above */
   padding: 8px 0;
   position: absolute;
   z-index: 1;
   right: 0%;
-  bottom:15%;
-
-
+  bottom: 15%;
 }
 
 /* Popup arrow */
 .popup .popuptext::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 50%;
@@ -541,13 +545,21 @@ section {
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* ------------ Q&A sekcija ------------ */
 
