@@ -88,7 +88,7 @@ video {
 
 .tajmer {
   font-family: 'Source Code Pro', monospace !important;
-  margin-top: 80px;
+  margin-top: 30px;
   color: #00ffa3;
   font-size: 50px;
   text-align: center;
@@ -108,6 +108,27 @@ video {
   color: #00ffa3;
   font-size: 30px !important;
   text-align: center;
+}
+
+a.prijaviSe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00ffa3;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0;
+  transition: all 0.5s;
+}
+
+a.prijaviSe:hover {
+  text-decoration: none;
+  color: #019961;
+  font-size: 2em;
+  cursor: url(../icons/cursor-pointer.png), auto !important;
 }
 
 .tajmer div {
@@ -337,14 +358,14 @@ section {
 }
 
 .section-index {
-  color: lightgreen;
+  color: #00ffa3;
   font-weight: bolder;
   font-size: 20px;
   font-family: Poppins !important;
 }
 
 .section-heading {
-  color: grey;
+  color: #00ffa3;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 18px;
@@ -680,7 +701,7 @@ section {
 /* ------------ Footer ------------ */
 
 .footer {
-  background: url(../docs/background-image-3.jpg) no-repeat;
+  background: url(../docs/background-image.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -706,7 +727,7 @@ h4 {
 }
 
 .footer p {
-  color: grey;
+  color: #00ffa3;
   font-weight: lighter;
 }
 
