@@ -56,7 +56,7 @@
 
       <div class="header">
         <h1>HZS - Bring IT on!</h1>
-        <div class="tajmer wow fadeInUp" data-wow-delay="0.3s"">
+        <div class="tajmer wow fadeInUp" data-wow-delay="0.3s">
       </div>
       <img
         src="docs/linija.png"
@@ -272,7 +272,47 @@
               Naš tim
             </div>
           </div>
+          <div class="img-fluid popup" style="text-align:center">
+              <div   style="margin:80px 60px 80px 60px; display:inline-block ; position:relative" >
+                  <img src="images/avatar-generic.jpg" alt="avatar image" width="150px" height="150px" onClick="popupFunction(1)">
+                  <div class="popuptext " id="myPopup1" onClick="popupFunction(1)">
+                      <img src="images/avatar-generic.jpg" alt="card image" width="100px" height="100px">
+                      <h3>POSITION 1</h3>
+                      <p>Text describing the position / person</p>
+                  </div>
+              </div>
+              <div  style="margin:80px 60px 80px 60px; display:inline-block ; position:relative" >
+                  <img src="images/avatar-generic.jpg" alt="avatar image" width="150px" height="150px"  onClick="popupFunction(2)">
+                  <div class="popuptext " id="myPopup2"  onClick="popupFunction(2)">
+                      <img src="images/avatar-generic.jpg" alt="card image" width="100px" height="100px" >
+                      <h3>POSITION 2</h3>
+                      <p>Text describing the position / person</p>
+                  </div>
+              </div>
+            <div style="margin:80px 60px 80px 60px; display:inline-block ; position:relative">
+                <img src="images/avatar-generic.jpg" alt="avatar image" width="150px" height="150px"  onClick="popupFunction(3)">
+                <div class="popuptext " id="myPopup3"  onClick="popupFunction(3)">
+                    <img src="images/avatar-generic.jpg" alt="card image" width="100px" height="100px">
+                    <h3>POSITION 3</h3>
+                    <p>Text describing the position / person</p>
+                </div>
+            </div>
+
+          </div>
         </div>
+          <script>
+            // When the user clicks on div, open the popup
+            function popupFunction(number) {
+              var popup = document.getElementById("myPopup"+number);
+              if(popup.style.visibility=="visible"){
+                popup.style.visibility="hidden";
+              }
+              else{
+                popup.style.visibility="visible";
+              }
+              // popup.classList.toggle("show");
+            }
+          </script>
       </section>
 
       <!-- Core Tim sekcija - Kraj -->
@@ -542,5 +582,7 @@
             }]
           });
       </script>
+    </div>
+
   </body>
 </html>
