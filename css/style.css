@@ -122,14 +122,53 @@ a.prijaviSe {
   font-weight: 600;
   font-size: 1.5em;
   margin: 0;
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 a.prijaviSe:hover {
   text-decoration: none;
-  color: #019961;
-  font-size: 2em;
+  color: #161616;
   cursor: url(../icons/cursor-pointer.png), auto !important;
+}
+
+a.prijaviSe:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #00ffa3;
+  z-index: -1;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+a.prijaviSe:hover:before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform 0.5s;
+}
+
+a.prijaviSe:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #00ffa3;
+  z-index: -1;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+a.prijaviSe:hover:after {
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 0.5s;
 }
 
 .tajmer div {
@@ -393,7 +432,7 @@ section {
   ); */
   background: url(../docs/background-image-2.jpg);
   height: auto;
-  overflow-x: hidden ;
+  overflow-x: hidden;
 }
 .timeline ul {
   padding: 50px 0;
@@ -503,7 +542,7 @@ section {
     margin-left: 20px;
   }
   .timeline ul li.in-view div {
-    max-width:300px;
+    max-width: 300px;
   }
   .timeline ul li div {
     width: calc(100vw - 91px);
@@ -522,9 +561,8 @@ section {
 }
 @media screen and (max-width: 400px) {
   .timeline ul li.in-view div {
-    max-width:250px;
+    max-width: 250px;
   }
-
 }
 /* ------------ Core Tim sekcija ------------ */
 .team {
@@ -715,14 +753,8 @@ section {
 /* ------------ Footer ------------ */
 
 .footer {
-  background: url(../docs/background-image.jpg) no-repeat;
+  background: url(../docs/background-image-3.jpg) no-repeat;
   background-size: cover;
-}
-
-#media,
-#address,
-#mail {
-  /* text-align: center !important; */
 }
 
 .footer .container {
@@ -735,6 +767,18 @@ h4 {
   font-size: 24px !important;
 }
 
+.footer ion-icon {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #00ffa3;
+  transition: 0.5s;
+}
+
+.footer ion-icon:hover {
+  color: #019961;
+  cursor: url(../icons/cursor-pointer.png), auto !important;
+}
+
 .footer h4 {
   font-weight: lighter;
   color: #fff;
@@ -742,7 +786,7 @@ h4 {
 
 .footer p {
   color: #00ffa3;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .footer li {
@@ -753,7 +797,7 @@ h4 {
 }
 .footer li:first-child {
   padding-left: 0;
-} 
+}
 #media ul {
   list-style: none;
 }
@@ -779,7 +823,8 @@ h4 {
   .video {
     width: 100%;
   }
-  .footer p, .footer h4 {
+  .footer p,
+  .footer h4 {
     text-align: center;
   }
   #media ul {
@@ -790,5 +835,9 @@ h4 {
   }
   .margin-top-xs {
     margin-top: 30px;
+  }
+
+  .footer ion-icon {
+    font-size: 18px;
   }
 }
