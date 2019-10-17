@@ -516,6 +516,9 @@ section {
     border-width: 8px 16px 8px 0;
     border-color: transparent white transparent transparent;
   }
+  .time-text {
+    font-size: 17px !important;
+  }
 }
 @media screen and (max-width: 400px) {
   .timeline ul li.in-view div {
