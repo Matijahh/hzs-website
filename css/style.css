@@ -4,6 +4,7 @@
 html,
 body {
   cursor: url(../icons/cursor.png), auto !important;
+  overflow-x: hidden !important;
 }
 
 * {
@@ -383,15 +384,16 @@ section {
 
 /* ------------ Timeline sekcija ------------ */
 .timeline {
-  background: rgb(51, 51, 51);
+  /* background: rgb(51, 51, 51);
   background: linear-gradient(
     90deg,
     rgba(51, 51, 51, 1) 0%,
     rgba(20, 112, 79, 1) 50%,
     rgba(0, 255, 163, 1) 100%
-  );
-  background-size: cover;
+  ); */
+  background: url(../docs/background-image-2.jpg);
   height: auto;
+  overflow-x: hidden ;
 }
 .timeline ul {
   padding: 50px 0;
@@ -500,6 +502,9 @@ section {
   .timeline ul li {
     margin-left: 20px;
   }
+  .timeline ul li.in-view div {
+    max-width:300px;
+  }
   .timeline ul li div {
     width: calc(100vw - 91px);
   }
@@ -512,7 +517,12 @@ section {
     border-color: transparent white transparent transparent;
   }
 }
+@media screen and (max-width: 400px) {
+  .timeline ul li.in-view div {
+    max-width:250px;
+  }
 
+}
 /* ------------ Core Tim sekcija ------------ */
 .team {
   height: auto;
