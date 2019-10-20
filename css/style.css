@@ -386,6 +386,11 @@ a.prijaviSe:hover:after {
 
 /* ------------ O Nama sekcija ------------ */
 
+.o-hakatonu-p p{
+  color: #161616;
+  text-transform: initial;
+}
+
 .content {
   position: absolute;
   margin-top: 100vh;
