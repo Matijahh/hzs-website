@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+#particles-js {
+  height: 300vh;
+}
+
 body {
   height: 100vh;
   background: linear-gradient(to right top, #00ffa3, #00ffa1, #07a15f, #019961)
@@ -39,6 +43,10 @@ body {
 
 .podaci-o-clanu {
   margin-bottom: 10px;
+}
+
+.linija {
+  width: 530px;
 }
 
 .txtb {
@@ -139,6 +147,10 @@ textarea {
     font-size: 12px;
   }
 
+  .linija {
+    width: 430px;
+  }
+
   .txtb1 {
     margin-left: 0px;
   }
@@ -163,6 +175,10 @@ textarea {
 @media (max-width: 550px) {
   #forma {
     width: 350px;
+  }
+
+  .linija {
+    width: 280px;
   }
 
   #forma h1 {
