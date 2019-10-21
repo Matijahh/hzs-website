@@ -27,6 +27,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Ikone -->
@@ -284,47 +285,121 @@
               Naš tim
             </div>
           </div>
-          <div class="img-fluid popup" style="text-align:center">
-              <div   style="margin:80px 60px 80px 60px; display:inline-block ; position:relative" >
-                  <img src="images/avatar-generic.jpg" alt="avatar image" width="150px" height="150px" onClick="popupFunction(1)">
-                  <div class="popuptext " id="myPopup1" onClick="popupFunction(1)">
-                      <img src="images/avatar-generic.jpg" alt="card image" width="100px" height="100px">
-                      <h3>POSITION 1</h3>
-                      <p>Text describing the position / person</p>
-                  </div>
+          <div class="text-center py-5 container">
+              <!-- Grid row -->
+          
+          <div class="row">
+              <!-- Grid column -->
+              <div class="col-lg-4  mb-lg-0 mb-5">
+                  <div class="avatar-team mx-auto">
+                      <img class="avatar-img" src="./images/avatar.jpeg"/>
+                    </div>
+                <h5 class="font-weight-bold mt-4 ">Anna Williams</h5>
+                <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p>
+              
+                <ul class="list-unstyled mb-0">
+                    <a>
+                        <ion-icon class="team-icons" name="logo-facebook"></ion-icon>
+                    </a>
+                    <a>
+                        <ion-icon class="team-icons" name="logo-linkedin"></ion-icon>
+                    </a>
+                  </ul>
               </div>
-              <div  style="margin:80px 60px 80px 60px; display:inline-block ; position:relative" >
-                  <img src="images/avatar-generic.jpg" alt="avatar image" width="150px" height="150px"  onClick="popupFunction(2)">
-                  <div class="popuptext " id="myPopup2"  onClick="popupFunction(2)">
-                      <img src="images/avatar-generic.jpg" alt="card image" width="100px" height="100px" >
-                      <h3>POSITION 2</h3>
-                      <p>Text describing the position / person</p>
-                  </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-lg-4  mb-lg-0 mb-5">
+                  <div class="avatar-team koordinator mx-auto">
+                      <img class="avatar-img" src="./images/avatar.jpeg"/>
+                    </div>
+                <h5 class="font-weight-bold mt-4">John Doe</h5>
+                <p class="text-uppercase blue-text"><strong>Koordinator</strong></p>
+                <ul class="list-unstyled mb-0">
+                    <a>
+                        <ion-icon class="team-icons" name="logo-facebook"></ion-icon>
+                    </a>
+                    <a>
+                        <ion-icon class="team-icons" name="logo-linkedin"></ion-icon>
+                    </a>
+                  </ul>
               </div>
-            <div style="margin:80px 60px 80px 60px; display:inline-block ; position:relative">
-                <img src="images/avatar-generic.jpg" alt="avatar image" width="150px" height="150px"  onClick="popupFunction(3)">
-                <div class="popuptext " id="myPopup3"  onClick="popupFunction(3)">
-                    <img src="images/avatar-generic.jpg" alt="card image" width="100px" height="100px">
-                    <h3>POSITION 3</h3>
-                    <p>Text describing the position / person</p>
-                </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-lg-4 mb-md-0 mb-5">
+                  <div class="avatar-team mx-auto">
+                      <img class="avatar-img" src="./images/avatar.jpeg"/>
+                    </div>
+                <h5 class="font-weight-bold mt-4">Maria Smith</h5>
+                <p class="text-uppercase blue-text"><strong>Photographer</strong></p>
+                <ul class="list-unstyled mb-0">
+                  <a>
+                      <ion-icon class="team-icons" name="logo-facebook"></ion-icon>
+                  </a>
+                  <a>
+                      <ion-icon class="team-icons" name="logo-linkedin"></ion-icon>
+                  </a>
+                </ul>
+              </div>
+              <!-- Grid column -->
             </div>
-
+            <!-- Grid row -->
+            <div class="row mt-5">
+                <!-- Grid column -->
+                <div class="col-lg-4  mb-lg-0 mb-5">
+                    <div class="avatar-team mx-auto">
+                        <img class="avatar-img" src="./images/avatar.jpeg"/>
+                      </div>
+                  <h5 class="font-weight-bold mt-4 ">Anna Williams</h5>
+                  <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p>
+                
+                  <ul class="list-unstyled mb-0">
+                      <a>
+                          <ion-icon class="team-icons" name="logo-facebook"></ion-icon>
+                      </a>
+                      <a>
+                          <ion-icon class="team-icons" name="logo-linkedin"></ion-icon>
+                      </a>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-4  mb-lg-0 mb-5">
+                    <div class="avatar-team mx-auto">
+                        <img class="avatar-img" src="./images/avatar.jpeg"/>
+                      </div>
+                  <h5 class="font-weight-bold mt-4">John Doe</h5>
+                  <p class="text-uppercase blue-text"><strong>Web developer</strong></p>
+                  <ul class="list-unstyled mb-0">
+                      <a>
+                          <ion-icon class="team-icons" name="logo-facebook"></ion-icon>
+                      </a>
+                      <a>
+                          <ion-icon class="team-icons" name="logo-linkedin"></ion-icon>
+                      </a>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-4 mb-md-0 mb-5">
+                  <div class="avatar-team mx-auto">
+                    <img class="avatar-img" src="./images/avatar.jpeg"/>
+                  </div>
+                  <h5 class="font-weight-bold mt-4">Maria Smith</h5>
+                  <p class="text-uppercase blue-text"><strong>Photographer</strong></p>
+                  <ul class="list-unstyled mb-0">
+                    <a>
+                        <ion-icon class="team-icons" name="logo-facebook"></ion-icon>
+                    </a>
+                    <a>
+                        <ion-icon class="team-icons" name="logo-linkedin"></ion-icon>
+                    </a>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
           </div>
         </div>
-          <script>
-            // When the user clicks on div, open the popup
-            function popupFunction(number) {
-              var popup = document.getElementById("myPopup"+number);
-              if(popup.style.visibility=="visible"){
-                popup.style.visibility="hidden";
-              }
-              else{
-                popup.style.visibility="visible";
-              }
-              // popup.classList.toggle("show");
-            }
-          </script>
       </section>
 
       <!-- Core Tim sekcija - Kraj -->
@@ -332,7 +407,7 @@
       <!-- FAQ sekcija - Pocetak -->
 
       <a name="faq"></a>
-
+      
       <section class="faq">
         <div class="container-fluid">
           <div class="section-data">
@@ -352,9 +427,62 @@
               </div>
             </div>
           </div>
+          
+        </div>
+        <div class="container center-y">
+
+       
+        <div class="row">
+            <div class="col-md-12">
+                <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Collapsible Group Item #1
+                          </button>
+                        </h5>
+                      </div>
+            
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                          1Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Collapsible Group Item #2
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Collapsible Group Item #3
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
         </div>
       </section>
-
       <!-- FAQ sekcija - Kraj -->
 
       <!-- Partneri sekcija - Pocetak -->
