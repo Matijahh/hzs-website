@@ -386,15 +386,29 @@ a.prijaviSe:hover:after {
 
 /* ------------ O Nama sekcija ------------ */
 
-.o-hakatonu-p p{
+.o-hakatonu-p p {
   color: #161616;
   text-transform: initial;
+}
+
+.o-hakatonu-p p span {
+  font-weight: bolder;
 }
 
 .content {
   position: absolute;
   margin-top: 100vh;
   width: 100%;
+}
+
+.story .section-index,
+.team .section-index {
+  color: #019961;
+}
+
+.story .section-heading,
+.team .section-heading {
+  color: #019961;
 }
 
 section {
@@ -571,8 +585,7 @@ section {
 }
 /* ------------ Core Tim sekcija ------------ */
 .team-icons {
-  font-size: 25px;
-  cursor: pointer;
+  font-size: 35px;
 }
 .team {
   height: auto;
@@ -583,22 +596,24 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 5px solid  #00ffa3;
+  border: 5px solid #00ffa3;
   overflow: hidden;
 }
 .avatar-team.koordinator {
   border: 5px solid #00ffa3;
-  box-shadow: -1px 13px 22px -10px rgba(0,0,0,0.65);
+  box-shadow: -1px 13px 22px -10px rgba(0, 0, 0, 0.65);
 }
 .avatar-img {
   object-fit: cover;
   width: 200px;
   height: 200px;
 }
+
 /* ------------ Q&A sekcija ------------ */
 .faq {
-  background: url(../docs/background-image-2.jpg) no-repeat;
+  background: url(../docs/background-image-2.jpg);
   background-size: cover;
+  overflow: hidden;
 }
 .center-y {
   position: relative;
@@ -607,22 +622,21 @@ section {
 }
 .card-header {
   background-color: #00ffa3 !important;
- 
 }
 .card-body {
-  font-size: 20px !important
+  font-size: 20px !important;
 }
 .btn-link {
   text-decoration: none !important;
   color: white !important;
-  font-size:25px !important
+  font-size: 25px !important;
 }
 @media (max-width: 800px) {
   .btn-link {
-    font-size:18px !important
+    font-size: 18px !important;
   }
   .card-body {
-    font-size: 16px !important
+    font-size: 16px !important;
   }
 }
 /* ------------ Partneri sekcija ------------ */
@@ -735,6 +749,11 @@ section {
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+.slide img {
+  width: 300px;
+}
+
 /* ------------ Footer ------------ */
 
 .footer {
@@ -752,14 +771,14 @@ h4 {
   font-size: 24px !important;
 }
 
-.footer ion-icon {
+ion-icon {
   margin-top: 20px;
   font-size: 28px;
   color: #00ffa3;
   transition: 0.5s;
 }
 
-.footer ion-icon:hover {
+ion-icon:hover {
   color: #019961;
   cursor: url(../icons/cursor-pointer.png), auto !important;
 }
