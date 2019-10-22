@@ -614,8 +614,7 @@ section {
 /* ------------ Q&A sekcija ------------ */
 .faq {
   background: url(../docs/background-image-2.jpg);
-  background-size: cover;
-  overflow: hidden;
+  height: auto;
 }
 .center-y {
   position: relative;
@@ -753,9 +752,42 @@ section {
 }
 
 .slide img {
-  width: 300px;
+  /* width: 300px; */
 }
-
+.partner-img {
+  object-fit: contain;
+  height: 200px;
+  width: 200px;
+}
+.partneri img {
+  object-fit: contain;
+  width: 70%;
+  height: 100%;
+}
+.shadow {
+  box-shadow: -1px 13px 22px -10px rgba(0, 0, 0, 0.65);
+}
+@media (max-width: 765px) {
+  .partneri img {
+    object-fit: contain;
+    width: 30%;
+    height: 200px;
+  }
+  .shadow {
+    margin-top: 20px;
+  }
+  .partneri {
+    height: auto;
+  }
+  .vertical-center {
+    position: relative;
+    top: 0%;
+    transform: translateY(0%);
+  }
+  .m-small{
+    margin-top: 50px;
+  }
+}
 /* ------------ Footer ------------ */
 
 .footer {
