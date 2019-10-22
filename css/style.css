@@ -402,12 +402,14 @@ a.prijaviSe:hover:after {
 }
 
 .story .section-index,
-.team .section-index {
+.team .section-index,
+.partneri .section-index {
   color: #019961;
 }
 
 .story .section-heading,
-.team .section-heading {
+.team .section-heading,
+.partneri .section-heading {
   color: #019961;
 }
 
