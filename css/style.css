@@ -186,7 +186,21 @@ a.prijaviSe:hover:after {
   font-size: 25px;
 }
 
-@media (max-width: 900px) {
+img.linija {
+  width: 730px;
+}
+
+@media (min-width: 1600px) {
+  img.linija {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1030px) {
+  img.linija {
+    width: 400px;
+  }
+
   .header h1 {
     font-size: 23px !important;
     text-align: center;
@@ -208,6 +222,24 @@ a.prijaviSe:hover:after {
 
   #tajmer-poruka {
     font-size: 20px !important;
+  }
+}
+
+@media (max-width: 750px) {
+  img.linija {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  img.linija {
+    width: 500px;
+  }
+}
+
+@media (max-width: 420px) {
+  img.linija {
+    width: 300px;
   }
 }
 
@@ -751,9 +783,6 @@ section {
   display: none;
 }
 
-.slide img {
-  /* width: 300px; */
-}
 .partner-img {
   object-fit: contain;
   height: 200px;
@@ -784,7 +813,7 @@ section {
     top: 0%;
     transform: translateY(0%);
   }
-  .m-small{
+  .m-small {
     margin-top: 50px;
   }
 }
