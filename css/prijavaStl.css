@@ -139,6 +139,12 @@ textarea {
   width: 60px;
 }
 
+.checkboxes {
+  color: #00ffa3;
+}
+
+
+
 @media (max-width: 770px) {
   #forma {
     width: 500px;
