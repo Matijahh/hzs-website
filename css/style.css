@@ -433,8 +433,8 @@ img.linija {
   font-weight: bolder;
 }
 
-.o-hakatonu-p.wow.fadeInUp.animated > p {  
-  font-size: 30px !important;
+.o-hakatonu-p.wow.fadeInUp.animated > p {
+  font-size: 26px !important;
 }
 
 .content {
@@ -697,7 +697,7 @@ section {
   font-size: 25px !important;
 }
 @media (max-width: 800px) {
-  .o-hakatonu-p.wow.fadeInUp.animated > p {  
+  .o-hakatonu-p.wow.fadeInUp.animated > p {
     font-size: 20px !important;
   }
   .btn-link {
