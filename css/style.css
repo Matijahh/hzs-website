@@ -418,6 +418,10 @@ img.linija {
 
 /* ------------ O Nama sekcija ------------ */
 
+.story {
+  cursor: url(../icons/cursor-tamniji.png), auto !important;
+}
+
 .story p {
   color: #019961;
   text-transform: initial;
@@ -542,6 +546,7 @@ section {
   border-color: transparent transparent transparent white;
 }
 .time-text {
+  cursor: url(../icons/cursor-tamniji.png), auto !important;
   padding: 0px 15px 15px 15px;
   left: 0 !important;
   transition: none !important;
@@ -575,6 +580,7 @@ section {
   opacity: 1;
 }
 .time-inner {
+  cursor: url(../icons/cursor-tamniji.png), auto !important;
   background-color: #00ffa3;
   height: 40px;
   color: white;
@@ -624,7 +630,12 @@ section {
   font-size: 35px;
 }
 .team {
+  cursor: url(../icons/cursor-tamniji.png), auto !important;
   height: auto;
+}
+
+.team ion-icon:hover {
+  cursor: url(../icons/cursor-pointer-tamniji.png), auto !important;
 }
 /*   #00ffa3; #00ffa3; */
 
@@ -655,12 +666,17 @@ section {
   top: 50%;
   transform: translateY(-50%);
 }
+
+.card {
+  cursor: url(../icons/cursor-tamniji.png), auto !important;
+}
+
 .card-header {
   background-color: #00ffa3 !important;
 }
 
 .card-header button:hover {
-  cursor: url(../icons/cursor-pointer.png), auto !important;
+  cursor: url(../icons/cursor-pointer-tamniji.png), auto !important;
 }
 
 .card-header button {
@@ -685,6 +701,14 @@ section {
   }
 }
 /* ------------ Partneri sekcija ------------ */
+
+.partneri {
+  cursor: url(../icons/cursor-tamniji.png), auto !important;
+}
+
+.partneri a:hover {
+  cursor: url(../icons/cursor-pointer-tamniji.png), auto !important;
+}
 
 .partners-wrap {
   height: 100%;
