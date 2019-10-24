@@ -418,12 +418,14 @@ img.linija {
 
 /* ------------ O Nama sekcija ------------ */
 
-.o-hakatonu-p p {
-  color: #161616;
+.story p {
+  color: #019961;
   text-transform: initial;
+  font-weight: 600;
 }
 
 .o-hakatonu-p p span {
+  color: #161616;
   font-weight: bolder;
 }
 
@@ -663,10 +665,11 @@ section {
 
 .card-header button {
   color: #019961 !important;
+  font-weight: 600;
 }
 
 .card-body {
-  font-size: 20px !important;
+  font-size: 23px !important;
 }
 .btn-link {
   text-decoration: none !important;
