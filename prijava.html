@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Prijava za HZS</title>
 
+  <!--Favicon-->
+  <link rel='icon' href='icons/favicon.ico' type='image/x-icon' />
+
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" />
 
@@ -29,16 +32,16 @@
         <h1 class="naslov-forme">Prijava za Hakaton za srednjoškolce 2019.</h1>
         <form name="prijava">
           <div id="form">
-  
+
             <div class="form-row justify-content-between">
-  
-  
+
+
               <div class="col col-12 col-md-12 txtb">
                 <input type="text" id="nameTeam" name="nameTeam" required />
                 <span data-placeholder="Naziv tima *"></span>
               </div>
-              
-  
+
+
               <div class="col col-12 col-md-5 txtb">
                 <input type="text" id="name1" name="name1" required />
                 <span data-placeholder="Ime 1. člana *"></span>
@@ -59,20 +62,20 @@
                   title="Broj telefona mora biti unet u formatu: +38x6yz..." required />
                 <span data-placeholder="Telefon 1. člana *"></span>
               </div>
-              
+
               <div class="col col-12 col-md-5 txtb">
                 <input type="text" id="nameSchool1" name="nameSchool1" required />
                 <span data-placeholder="Naziv škole 1. člana *"></span>
               </div>
-  
+
               <div class="col col-12 col-md-5 txtb">
-                <input type="text" id="razred1" name="razred1" 
-                pattern="[1-4]" title="Unesite broj izme]u 1 i 4" required />
+                <input type="text" id="razred1" name="razred1" pattern="[1-4]" title="Unesite broj izme]u 1 i 4"
+                  required />
                 <span data-placeholder="Razred 1. člana *"></span>
               </div>
-  
+
               <img src="docs/linija.png  " alt="" class="linija" />
-  
+
               <div class="col col-12 col-md-5 txtb">
                 <input type="text" id="name2" name="name2" required />
                 <span data-placeholder="Ime 2. člana *"></span>
@@ -98,17 +101,17 @@
                 <input type="text" id="nameSchool2" name="nameSchool2" required />
                 <span data-placeholder="Naziv škole 2. člana *"></span>
               </div>
-  
+
               <div class="col col-12 col-md-5 txtb">
-                <input type="text" id="razred2" name="razred2" 
-                pattern="[1-4]" title="Unesite broj izme]u 1 i 4" required />
+                <input type="text" id="razred2" name="razred2" pattern="[1-4]" title="Unesite broj izme]u 1 i 4"
+                  required />
                 <span data-placeholder="Razred 2. člana *"></span>
               </div>
-  
-  
+
+
               <img src="docs/linija.png  " alt="" class="linija" />
-  
-  
+
+
               <div class="col col-12 col-md-5 txtb">
                 <input type="text" id="name3" name="name3" required />
                 <span data-placeholder="Ime 3. člana *"></span>
@@ -133,17 +136,17 @@
                 <input type="text" id="nameSchool3" name="nameSchool3" required />
                 <span data-placeholder="Naziv škole 3. člana *"></span>
               </div>
-  
+
               <div class="col col-12 col-md-5 txtb">
-                <input type="text" id="razred3" name="razred3" 
-                pattern="[1-4]" title="Unesite broj izme]u 1 i 4" required />
+                <input type="text" id="razred3" name="razred3" pattern="[1-4]" title="Unesite broj izme]u 1 i 4"
+                  required />
                 <span data-placeholder="Razred 3. člana *"></span>
               </div>
-  
-  
+
+
               <img src="docs/linija.png  " alt="" class="linija" />
-  
-  
+
+
               <div class="col col-12 col-md-5 txtb">
                 <input type="text" id="name4" name="name4" />
                 <span data-placeholder="Ime 4. člana"></span>
@@ -165,33 +168,32 @@
                 <span data-placeholder="Telefon 4. člana"></span>
               </div>
               <div class="col col-12 col-md-5 txtb">
-                <input type="text" id="nameSchool4" name="nameSchool4"/>
+                <input type="text" id="nameSchool4" name="nameSchool4" />
                 <span data-placeholder="Naziv škole 4. člana"></span>
               </div>
-  
+
               <div class="col col-12 col-md-5 txtb">
-                <input type="text" id="razred4" name="razred4"
-                pattern="[1-4]" title="Unesite broj izme]u 1 i 4" />
+                <input type="text" id="razred4" name="razred4" pattern="[1-4]" title="Unesite broj izme]u 1 i 4" />
                 <span data-placeholder="Razred 4. člana"></span>
               </div>
-  
+
               <img src="docs/linija.png  " alt="" class="linija" />
-  
+
               <div>
                 <label id="pitanje#1"></label>
                 <p>Da li si ikada učestvovao/la na takmičenjima sličnog karaktera? *</p>
                 <textarea class="txtb" id="pitanje #1" name="pitanje #1" rows="5" required></textarea>
               </div>
-  
+
               <div>
                 <label id="pitanje#2"></label>
                 <p>Kako si saznao/la za Hakaton za srednjoškolce? *</p>
                 <div class="checkboxes">
-                <input type="checkbox" name="opcija1" value="PrekoDrustvenihMreza"> Preko društvenih mreža <br>
-                <input type="checkbox" name="opcija2" value="PrekoPrijatelja"> Preko prijatelja<br>
-                <input type="checkbox" name="opcija3" value="PrekoPrezentacijeUSkoli"> Preko prezentacije u školi<br>
-                <input type="checkbox" name="opcija4" value="PrekoProfesora"> Preko prezentacije u školi<br>
-                <input type="checkbox" name="opcija5" value="NaDrugiNacin"> Na drugi način<br>
+                  <input type="checkbox" name="opcija1" value="PrekoDrustvenihMreza"> Preko društvenih mreža <br>
+                  <input type="checkbox" name="opcija2" value="PrekoPrijatelja"> Preko prijatelja<br>
+                  <input type="checkbox" name="opcija3" value="PrekoPrezentacijeUSkoli"> Preko prezentacije u školi<br>
+                  <input type="checkbox" name="opcija4" value="PrekoProfesora"> Preko prezentacije u školi<br>
+                  <input type="checkbox" name="opcija5" value="NaDrugiNacin"> Na drugi način<br>
                 </div>
                 <br>
                 <p>Ukoliko si izabrao poslednju opciju, dopiši odgovor u polje za unos:</p>
@@ -206,24 +208,25 @@
                 <label id="pitanje#4"></label>
                 <p>Po čemu je tvoj tim jedinstven i zbog čega bi baš vi trebalo da budete deo ovogodišnjeg
                   Hakatona za srednjoškolce? *</p>
-                <textarea class="txtb" id="pitanje #4" maxlength="250" name="pitanje #4" rows="5" placeholder=" Maksimalno 250 karaktera..." required></textarea>
-                
+                <textarea class="txtb" id="pitanje #4" maxlength="250" name="pitanje #4" rows="5"
+                  placeholder=" Maksimalno 250 karaktera..." required></textarea>
+
               </div>
               <div>
                 <label id="pitanje#5"></label>
                 <p>Koja te osoba iz IT sveta motiviše? Zašto si izabrao/la baš tu osobu? *</p>
                 <textarea class="txtb" id="pitanje #5" name="pitanje #5" rows="5" required></textarea>
               </div>
-          
-  
+
+
               <button class="logbtn" type="submit"><span class="logbtn-txt">Pošalji prijavu</span> </button>
-  
+
               <div class="bottom-text">
                 <p>Powered by <img src="./docs/fonislogo_crni.png" alt="" /></p>
               </div>
             </div>
-  
-  
+
+
           </div>
       </div>
       <div id="poruka">
@@ -240,7 +243,7 @@
   <!--Particle JS CDN-->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
+    particlesJS.load('particles-js', 'particles.json', function () {
       console.log('particles.json loaded');
     });
   </script>
