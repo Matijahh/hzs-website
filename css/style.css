@@ -230,6 +230,10 @@ img.linija {
   img.linija {
     width: 600px;
   }
+
+  a.prijaviSe {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 600px) {
