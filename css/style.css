@@ -423,6 +423,14 @@ img.linija {
 
 /* ------------ O Nama sekcija ------------ */
 
+a.pravila {
+  color: #019961;
+}
+
+a.pravila:hover {
+  cursor: url(../icons/cursor-pointer-tamniji.png), auto !important;
+}
+
 .story {
   cursor: url(../icons/cursor-tamniji.png), auto !important;
 }
