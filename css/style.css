@@ -721,15 +721,16 @@ section {
   }
 }
 /* ------------ Partneri sekcija ------------ */
-
 .partneri {
   cursor: url(../icons/cursor-tamniji.png), auto !important;
+  height: auto;
 }
-
 .partneri a:hover {
   cursor: url(../icons/cursor-pointer-tamniji.png), auto !important;
 }
-
+.partneri h1 {
+  width: 100%;
+}
 .partners-wrap {
   height: 100%;
 }
@@ -839,15 +840,16 @@ section {
   display: none;
 }
 
-.partner-img {
-  object-fit: contain;
-  height: 200px;
-  width: 200px;
-}
+
 .partneri img {
   object-fit: contain;
   width: 70%;
   height: 100%;
+}
+.customer-logos .partner-img {
+  object-fit: contain;
+  height: 150px;
+  width: 150px;
 }
 .shadow {
   box-shadow: -1px 13px 22px -10px rgba(0, 0, 0, 0.65);
@@ -857,6 +859,9 @@ section {
     object-fit: contain;
     width: 30%;
     height: 200px;
+  }
+  .customer-logos .partner-img{
+    width: 120px;
   }
   .shadow {
     margin-top: 20px;
