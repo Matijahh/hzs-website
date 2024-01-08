@@ -2,7 +2,7 @@
 
 > Static website built with the HTML & CSS & JavaScript.
 
-<img src="./img/screens.png">
+<img src="screens.png">
 
 This is a website made for promoting the project High School Hackathon using JavaScript.
 
